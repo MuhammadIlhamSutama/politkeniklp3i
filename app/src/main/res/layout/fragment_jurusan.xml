@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JurusanFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_jurusan">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="90dp"> <!-- Tambah padding untuk memastikan bisa discroll -->
+
+            <ImageButton
+                android:id="@+id/move_adbis"
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:layout_marginTop="205dp"
+                android:contentDescription="@string/administrasi_bisnis"
+                android:src="@drawable/ic_adbis"
+                android:background="@null" />
+
+            <ImageButton
+                android:id="@+id/move_mi"
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:layout_marginTop="5dp"
+                android:contentDescription="@string/manajemen_informatika"
+                android:src="@drawable/ic_mi"
+                android:background="@null" />
+
+            <ImageButton
+                android:id="@+id/card3"
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:layout_marginTop="5dp"
+                android:contentDescription="x"
+                android:src="@drawable/ic_mi"
+                android:background="@null" />
+
+            <ImageButton
+                android:id="@+id/move_humas"
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:layout_marginTop="5dp"
+                android:contentDescription="@string/humas"
+                android:src="@drawable/ic_humas"
+                android:background="@null" />
+
+            <ImageButton
+                android:id="@+id/move_akuntansi"
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:layout_marginTop="5dp"
+                android:contentDescription="@string/akuntansi"
+                android:src="@drawable/ic_akuntansi"
+                android:background="@null" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

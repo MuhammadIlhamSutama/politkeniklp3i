@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
                     replaceFragment(new HomeFragment());
                     break;
                 case R.id.jurusan:
-                    replaceFragment(new SearchFragment());
+                    replaceFragment(new JurusanFragment());
                     break;
                 case R.id.about:
                     replaceFragment(new ProfileFragment());
