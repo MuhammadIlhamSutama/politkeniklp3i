@@ -4,7 +4,16 @@
     <color name="white">#FFFFFFFF</color>
     <color name="dark_blue1">#0D2A82</color>
     <color name="dark_blue2">#0D1E55</color>
+    <color name="tab_selected">#0D1E55</color>
+    <color name="tab_unselected">#8B8A8A</color>
     <color name="grey">#8B8A8A</color>
+    <color name="darkgrey">#2B2B2B</color>
+    <color name="light_green">#16C7B8</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
 
 
 </resources>

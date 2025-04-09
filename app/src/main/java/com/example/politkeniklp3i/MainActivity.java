@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
+import android.util.Log;
 
 import android.view.WindowManager;
 import android.widget.ImageView;
@@ -40,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                     replaceFragment(new HomeFragment());
                     break;
                 case R.id.jurusan:
-                    replaceFragment(new SearchFragment());
+                    replaceFragment(new JurusanFragment());
                     break;
                 case R.id.about:
                     replaceFragment(new ProfileFragment());
@@ -59,5 +60,6 @@ public class MainActivity extends AppCompatActivity {
         fragmentTransaction.commit();
 
     }
+
 
 }

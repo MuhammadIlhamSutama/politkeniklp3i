@@ -2,4 +2,11 @@
     <string name="app_name">politkeniklp3i</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="administrasi_bisnis">Administrasi Bisnis</string>
+    <string name="manajemen_informatika">Manajemen Informatika</string>
+    <string name="humas">humas</string>
+    <string name="akuntansi">akuntansi</string>
+    <string name="title_activity_apa_itu_humas">ApaItuHumasActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>
