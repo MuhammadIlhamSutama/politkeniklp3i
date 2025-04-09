@@ -35,12 +35,12 @@
                 android:background="@null" />
 
             <ImageButton
-                android:id="@+id/card3"
+                android:id="@+id/bisdig"
                 android:layout_width="match_parent"
                 android:layout_height="95dp"
                 android:layout_marginTop="5dp"
                 android:contentDescription="x"
-                android:src="@drawable/ic_mi"
+                android:src="@drawable/ic_bisdig"
                 android:background="@null" />
 
             <ImageButton

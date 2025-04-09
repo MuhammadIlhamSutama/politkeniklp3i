@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/humas_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HumasActivity"
@@ -17,10 +17,9 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <GridLayout
-            android:id="@id/main"
+            android:id="@+id/grid_layoutmain"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@+id/top_banner"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="30dp"
             android:layout_marginRight="20dp"
@@ -104,11 +103,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
     <View
+        android:id="@+id/line_separator"
         android:layout_width="100dp"
         android:layout_height="2dp"
+        android:layout_marginTop="8dp"
         android:background="@color/dark_blue2"
-        android:layout_marginTop="0dp"
-        app:layout_constraintCircleRadius="@dimen/cardview_default_radius"
+        app:layout_constraintTop_toBottomOf="@+id/move_back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 

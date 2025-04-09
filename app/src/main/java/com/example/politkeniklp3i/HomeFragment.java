@@ -40,7 +40,7 @@ public class HomeFragment extends Fragment {
                 "28 Maret 2025"));
         newsList.add(new NewsItem(
                 "https://www.lp3i.ac.id/wp-content/uploads/2022/12/Gambar1-300x150.jpg",
-                "Bersatu dalam Empati, Keluarga Besar LP3I Turut Serta dalam Membantu Korban Gempa ...",
+                "Bersatu dalam Empati, Keluarga Besar LP3I Turut Serta dalam Membantu ...",
                 "01 Desember 2022"));
         newsList.add(new NewsItem(
                 "https://www.lp3i.ac.id/wp-content/uploads/2023/09/100-1-240x300.png",
