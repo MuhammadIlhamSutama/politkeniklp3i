@@ -17,93 +17,94 @@
         android:layout_marginTop="50dp"
         android:src="@drawable/thirtyfiveyears"/>
 
-    <View android:layout_width="match_parent"
+    <View
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="140dp"
         android:background="@drawable/background_white_bottom"
         app:layout_constraintTop_toBottomOf="@id/thirtyfiveyears"/>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="16dp"
-        android:layout_marginTop="140dp">
+        android:layout_marginTop="140dp"
+        android:padding="16dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center_horizontal">
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
 
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:src="@drawable/sambutan"
-                />
+                android:src="@drawable/sambutan" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
                 android:text="DR. H. M. Syahrial Yusuf, SE, MBA, MM \nPembina Yayasan"
                 android:textColor="@color/black"
-                android:gravity="center"
-                android:textStyle="bold"
                 android:textSize="14sp"
-                android:layout_marginTop="10dp"
-                />
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
                 android:text="Sambutan"
                 android:textColor="@color/black"
-                android:layout_marginTop="20dp"
                 android:textSize="20sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/expandable_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="10"
                 android:text="Bahagia sekali rasanya kami bisa berada di tengah anda untuk menghadirkan sekelumit informasi mengenai lembaga pendidikan kami, yang selama ini telah turut membantu ribuan lulusannya meraih cita-cita menjadi profesional dibidangnya masing-masing. Kami merasa bertanggung jawab untuk menyebarkan informasi ini seluas-luasnya agar anda, para generasi muda , tidak keliru dalam menentukan pilihan tempat belajar lanjutan pasca SMA/K, yang kami inginkan agar anda mendapatkan pendidikan terbaik yang dapat dimanfaatkan sepenuhnya dalam pengembangan karir anda dan tentunya juga, peningkatan kualitas hidup Anda. Sebagai pelopor pendidikan profesi di Indonesia, yaitu pendidikan yang berorientasi dunia kerja tanpa meninggalkan kaidah-kaidah akademis, kami terus-menerus meningkatkan kualitas pendidikan dengan cara menyesuaikan kurikulum dengan mengikuti perkembangan yang terjadi di dunia kerja. Itulah yang menyebabkan daya saing lulusan LP3I di mata perusahaan selama ini tetap tinggi dan sulit untuk ditiru oleh lembaga lain. Era globalisasi sudah kita lalui, persaingan untuk terjun kedunia kerja akan semakin keras, kami siap menghadapinya! Bagaimana dengan anda?"
                 android:textColor="@color/black"
-                android:maxLines="10"
-                android:ellipsize="end"
-                android:textSize="14sp"
-                />
+                android:textSize="14sp" />
 
             <Button
                 android:id="@+id/expand_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/grey"
-                android:text="lihat selengkapnya"
                 android:layout_gravity="center"
-                android:background="@android:color/transparent"/>
+                android:background="@android:color/transparent"
+                android:text="lihat selengkapnya"
+                android:textColor="@color/grey" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
                 android:text="Jenjang Pendidikan"
                 android:textColor="@color/black"
-                android:layout_marginTop="20dp"
                 android:textSize="20sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:padding="8dp"
                 android:text="D3 – Pendidikan D3 (Diploma Tiga) adalah jenjang pendidikan yang memiliki masa kuliah selama 6 semester atau 3 tahun. Diploma tiga ini memiliki syarat kelulusan dengan menyelesaikan semua matakuliah, tidak mendapatkan nilai E serta menyelesaikan praktik kerja dan juga laporan latihan kerja di industri atau laporan final project untuk mendapatkan ijazah D3 dengan gelar AMd dan gelar profesi sebagai Tenaga Madya.Sarjana Terapan – Pendidikan Sarjana Terapan adalah jenjang pendidikan yang sering kali disamakan dengan program sarjana. Masa tempuhnya pun juga sama dengan Sarjana atau S1, yaitu 4 tahun. Perbedaannya, diploma empat ini memiliki fokus pada ilmu terapan dan syarat kelulusannya adalah dengan menyelesaikan semua matakuliah, tidak mendapatkan nilai E serta menyelesaikan praktik kerja kerja dan juga laporan latihan kerja di industri atau laporan final project untuk mendapatkan ijazah Sarjana Terapan dan mendapatkan gelar S.Tr dan gelar profesi sebagai Tenaga Ahli."
                 android:textColor="@color/black"
-                android:textSize="14sp"
 
-                android:padding="8dp"/>
+                android:textSize="14sp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:text="Lokasi"
                 android:textColor="@color/light_green"
-                android:layout_marginTop="10dp"
-                android:textSize="30sp"/>
+                android:textSize="30sp" />
 
             <ImageView
                 android:layout_width="match_parent"
@@ -115,31 +116,28 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
                 android:text="Yuk Kenalan Dengan Tribe LP3I!"
                 android:textColor="@color/black"
-                android:layout_marginTop="20dp"
                 android:textSize="20sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/tribe"
                 android:layout_marginTop="20dp"
-                />
+                android:src="@drawable/tribe" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="100dp"
+                android:padding="8dp"
                 android:text="Tribe adalah pengelompokkan individu berdasarkan minat, bakat, sifat dan program studi di LP3I yang bisa menunjang masa depan karir kamu karena pemilihan bidang studi yang tepat untuk didalami dan dijalankan nanti ketika bekerja. Yuk, tentukan tribe yang paling tepat untuk kamu. Jangan sampai salah pilih ya!
                     \n\nKenapa penting untuk tahu Tribe kamu yang mana?
                     \n\nDengan memahami Tribe apa yang cocok, kamu akan lebih semangat belajar karena dasarnya sudah suka pada topik pelajarannya. Pada dasarnya kalau kamu suka pada topik pelajarannya, memahami konsep – konsep ilmu didalamnya menjadi sangat mudah. Setelah lulus pada saat di dunia kerja, kamu juga akan lebih cepat berhasil membangun karir karena skill yang didapat selama belajar sesuai dengan minat dan bakatmu."
                 android:textColor="@color/black"
-                android:textSize="14sp"
-                android:padding="8dp"
-                android:layout_marginBottom="100dp"
-                />
-
+                android:textSize="14sp" />
 
 
         </LinearLayout>

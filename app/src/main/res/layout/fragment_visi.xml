@@ -32,7 +32,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="“Pada tahun 2031 menjadi Program Studi Hubungan Masyarakat yang unggul di Tingkat Nasional serta menghasilkan lulusan yang kompeten.”"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:layout_marginTop="20dp"
                 android:justificationMode="inter_word"/>
 
@@ -60,7 +60,7 @@
                             \n\n6. Meningkatkan sarana dan prasarana untuk mendukung proses pendidikan dan pembelajaraandalam bidang hubungan masyarakat.
                             \n\n7.Menjalin kerjasama dengan dunia usaha dan industridalam upaya menciptakan institusi sumber daya manusia yang profesional dan memiliki daya saing tinggi dalam bidang hubungan masyarakat.
                             \n\n8. Meningkatkan suasana akademik yang kondusif untuk mengembangkan kreativitas, inovatif, dan produktif demi keberlanjutan program studi."
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:maxLines="10"
                 android:ellipsize="end"
                 android:justificationMode="inter_word"/>

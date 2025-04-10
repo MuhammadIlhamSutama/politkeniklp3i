@@ -59,14 +59,14 @@ public class ApaItuHumasActivity extends AppCompatActivity {
 
         Fragment fragment = null;
 
-        switch (selectedCard.getId()) {
-            case R.id.card1:
+        switch (newIndex) {
+            case 0:
                 fragment = new FragmentApaItu();
                 break;
-            case R.id.card2:
+            case 1:
                 fragment = new FragmentVisi();
                 break;
-            case R.id.card3:
+            case 2:
                 fragment = new FragmentMisi();
                 break;
         }

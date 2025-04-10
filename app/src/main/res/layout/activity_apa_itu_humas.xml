@@ -8,16 +8,18 @@
     tools:context=".ApaItuHumasActivity">
 
     <androidx.cardview.widget.CardView
+        android:layout_marginTop="70dp"
         android:id="@+id/cardView"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="200dp"
         app:cardBackgroundColor="@color/darkgrey">
 
         <com.denzcoskun.imageslider.ImageSlider
             android:id="@+id/imageSlider"
             android:layout_width="match_parent"
-            android:layout_height="250dp"
-            app:iss_auto_cycle="false"
+            android:layout_height="200dp"
+            app:iss_auto_cycle="true"
+
             app:iss_title_background="@color/grey">
 
         </com.denzcoskun.imageslider.ImageSlider>
@@ -30,7 +32,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/cardView"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="15dp"
         android:fillViewport="false"
         android:scrollbars="none">
 
