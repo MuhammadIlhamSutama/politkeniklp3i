@@ -6,9 +6,79 @@
     tools:context=".FragmentVisi">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/insider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/judul1"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Visi"
+                android:textColor="@color/dark_blue1"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/paragraph1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="“Pada tahun 2031 menjadi Program Studi Hubungan Masyarakat yang unggul di Tingkat Nasional serta menghasilkan lulusan yang kompeten.”"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:justificationMode="inter_word"/>
+
+            <TextView
+                android:id="@+id/judul2"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Misi"
+                android:textColor="@color/dark_blue1"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/expandable_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:text="1. Menyelenggarakan pendidikan dan pengajaran di bidang hubungan masyarakatyang relevan dengan kebutuhan masyarakat masa kini dan masa mendatang.
+                            \n\n2. Mengembangkan kurikulum untuk mengatisipasi kebutuhan dunia kerja di bidang hubungan masyarakat di masa mendatang.
+                            \n\n3. Menyelenggarakan penelitian dan publikasi hasil karya ilmiah di bidang komunikasi dan hubungan masyarakat yang bermanfaat bagi pengembangan ilmu hubungan masyarakat.
+                            \n\n4. Menyelenggarakan pengabdian kepada masyarakat melalui program-program pengayaan dan pemberdayaan yang dapat memberikan manfaat bagi peningkatan kesejahteraan masyarakat.
+                            \n\n5. Meningkatkan kualitas layanan program studi melalui pengembangan sumber daya manusia baik dosen maupun tenaga kependidikan.
+                            \n\n6. Meningkatkan sarana dan prasarana untuk mendukung proses pendidikan dan pembelajaraandalam bidang hubungan masyarakat.
+                            \n\n7.Menjalin kerjasama dengan dunia usaha dan industridalam upaya menciptakan institusi sumber daya manusia yang profesional dan memiliki daya saing tinggi dalam bidang hubungan masyarakat.
+                            \n\n8. Meningkatkan suasana akademik yang kondusif untuk mengembangkan kreativitas, inovatif, dan produktif demi keberlanjutan program studi."
+                android:textSize="18sp"
+                android:maxLines="10"
+                android:ellipsize="end"
+                android:justificationMode="inter_word"/>
+
+            <Button
+                android:id="@+id/expand_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:textColor="@color/grey"
+                android:text="lihat selengkapnya"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"/>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
 
 </FrameLayout>

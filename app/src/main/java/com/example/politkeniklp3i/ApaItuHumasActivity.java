@@ -1,7 +1,6 @@
 package com.example.politkeniklp3i;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.LinearLayout;
 
 import androidx.activity.EdgeToEdge;
@@ -19,6 +18,7 @@ public class ApaItuHumasActivity extends AppCompatActivity {
 
     private LinearLayout card1, card2, card3;
     private List<LinearLayout> cards;
+    private int currentCardIndex = 0; // default ke card1
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,15 +42,15 @@ public class ApaItuHumasActivity extends AppCompatActivity {
         cards.add(card2);
         cards.add(card3);
 
-        card1.setOnClickListener(view -> updateCardSelection(card1));
-        card2.setOnClickListener(view -> updateCardSelection(card2));
-        card3.setOnClickListener(view -> updateCardSelection(card3));
+        card1.setOnClickListener(view -> updateCardSelection(card1, 0));
+        card2.setOnClickListener(view -> updateCardSelection(card2, 1));
+        card3.setOnClickListener(view -> updateCardSelection(card3, 2));
 
         // Tampilkan fragment default
-        updateCardSelection(card1);
+        updateCardSelection(card1, 0);
     }
 
-    private void updateCardSelection(LinearLayout selectedCard) {
+    private void updateCardSelection(LinearLayout selectedCard, int newIndex) {
         for (LinearLayout card : cards) {
             card.setBackgroundResource(
                     card.equals(selectedCard) ? R.drawable.bg_card_active : R.drawable.bg_card_inactive
@@ -72,10 +72,18 @@ public class ApaItuHumasActivity extends AppCompatActivity {
         }
 
         if (fragment != null) {
+            boolean toRight = newIndex > currentCardIndex;
+
             getSupportFragmentManager()
                     .beginTransaction()
+                    .setCustomAnimations(
+                            toRight ? R.anim.slide_in_right : R.anim.slide_in_left,
+                            toRight ? R.anim.slide_out_left : R.anim.slide_out_right
+                    )
                     .replace(R.id.fragment_container, fragment)
                     .commit();
+
+            currentCardIndex = newIndex;
         }
     }
 }

@@ -7,6 +7,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -21,6 +23,7 @@ public class FragmentVisi extends Fragment {
     private static final String ARG_PARAM2 = "param2";
 
     // TODO: Rename and change types of parameters
+    private boolean isExpanded = false;
     private String mParam1;
     private String mParam2;
 
@@ -59,6 +62,29 @@ public class FragmentVisi extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_visi, container, false);
+        View view = inflater.inflate(R.layout.fragment_visi, container, false);
+        // Inisialisasi elemen UI
+        TextView expandableText = view.findViewById(R.id.expandable_text);
+        Button expandButton = view.findViewById(R.id.expand_button);
+
+        // Event Klik Tombol Expand
+        expandButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (isExpanded) {
+                    expandableText.setMaxLines(10);
+                    expandButton.setText("Lihat Selengkapnya");
+                    expandButton.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_dropdown, 0);
+                } else {
+                    expandableText.setMaxLines(Integer.MAX_VALUE);
+                    expandButton.setText("Sembunyikan");
+                    expandButton.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_arrowup, 0);
+                }
+                isExpanded = !isExpanded;
+            }
+        });
+
+        return view;
     }
+
 }
