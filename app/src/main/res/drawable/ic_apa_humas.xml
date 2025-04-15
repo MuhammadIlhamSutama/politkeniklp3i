@@ -3738,11 +3738,5 @@
   <path
       android:pathData="M17.71,92.25L14.9,97.61V100.86H13.77V97.61L10.96,92.25H12.2L14.33,96.61L16.46,92.25H17.71Z"
       android:fillColor="#DAE2F2"/>
-  <path
-      android:pathData="M110,157.5H138.5M132,151L138.5,157.5M138.5,157.5L132,164"
-      android:strokeLineJoin="round"
-      android:strokeWidth="3"
-      android:fillColor="#00000000"
-      android:strokeColor="#000000"
-      android:strokeLineCap="round"/>
+
 </vector>

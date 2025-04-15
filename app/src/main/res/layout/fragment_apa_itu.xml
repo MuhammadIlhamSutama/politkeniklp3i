@@ -26,7 +26,7 @@
                     android:id="@+id/textView"
                     android:layout_width="240dp"
                     android:layout_height="wrap_content"
-                    android:text="Apa yang Akan Kamu Pelajari"
+                    android:text="Apa yang Akan Kamu Pelajari ?"
                     android:textColor="@color/dark_blue1"
                     android:textSize="24sp"
                     android:textStyle="bold"/>
@@ -37,8 +37,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Kamu akan belajar bagaimana cara perusahaan berkomunikasi untuk menjaga persepsi, dan juga menyampaikan beragam pesan melalui berabagai media seperti televisi, media cetak maupun media digital \n \nKemudian memahami dan mampu menyusun strategi pemasaran, menunjang komunikasi secara internal dan eksternal. Serta menyusun strategi dan implementasi untuk mengembangkan citra perusahaan melalui berbagai media."
-                    android:textSize="16sp"
+                    android:textSize="18sp"
                     android:layout_marginTop="20dp"
+                    android:layout_marginBottom="70dp"
                     android:justificationMode="inter_word"/>
 
             </LinearLayout>

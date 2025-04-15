@@ -1,6 +1,7 @@
 package com.example.politkeniklp3i;
 
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.LinearLayout;
 
 import androidx.activity.EdgeToEdge;
@@ -67,7 +68,7 @@ public class ApaItuHumasActivity extends AppCompatActivity {
                 fragment = new FragmentVisi();
                 break;
             case 2:
-                fragment = new FragmentMisi();
+                fragment = new FragmentProspekKarir();
                 break;
         }
 
@@ -85,5 +86,10 @@ public class ApaItuHumasActivity extends AppCompatActivity {
 
             currentCardIndex = newIndex;
         }
+
+        // Tombol untuk kembali ke halaman sebelumnya
+        Button backButton = findViewById(R.id.move_back);
+        backButton.setOnClickListener(v -> finish());
+
     }
 }

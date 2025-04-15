@@ -1,19 +1,20 @@
 package com.example.politkeniklp3i;
 
+import android.animation.ObjectAnimator;
+import android.animation.ValueAnimator;
 import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import com.example.politkeniklp3i.ImageViewActivity;
-
-import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
+
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
@@ -26,18 +27,20 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        // Inflate the fragment layout once
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        // Inisialisasi RecyclerView
+        // Initialize the RecyclerView
         RecyclerView recyclerView = view.findViewById(R.id.recycler);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
 
-        // Buat list berita
+        // Create list of news items
         ArrayList<NewsItem> newsList = new ArrayList<>();
         newsList.add(new NewsItem(
                 "https://www.lp3i.ac.id/wp-content/uploads/2025/03/HUT-LP3I-300x169.webp",
                 "HUT ke-36 LP3I: Melangkah Maju Cetak Profesional yang Unggul",
-                "28 Maret 2025"));
+                "28 Maret 2025"
+               ));
         newsList.add(new NewsItem(
                 "https://www.lp3i.ac.id/wp-content/uploads/2022/12/Gambar1-300x150.jpg",
                 "Bersatu dalam Empati, Keluarga Besar LP3I Turut Serta dalam Membantu ...",
@@ -51,11 +54,11 @@ public class HomeFragment extends Fragment {
                 "Pentingnya Mengadakan Latihan Dasar Kepemimpinan Student of LP3I",
                 "05 April 2021"));
 
-        // Pasang adapter
+        // Set up adapter
         ImageAdapter adapter = new ImageAdapter(getContext(), newsList);
         recyclerView.setAdapter(adapter);
 
-        // Tangani klik item
+        // Handle item clicks
         adapter.setOnItemClickListener(new ImageAdapter.OnItemClickListener() {
             @Override
             public void onClick(ImageView imageView, String url) {

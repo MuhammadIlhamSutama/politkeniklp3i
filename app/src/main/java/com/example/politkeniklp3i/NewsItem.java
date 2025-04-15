@@ -4,6 +4,7 @@ public class NewsItem {
     private String title;
     private String date;
 
+
     public NewsItem(String imageUrl, String title, String date) {
         this.imageUrl = imageUrl;
         this.title = title;
