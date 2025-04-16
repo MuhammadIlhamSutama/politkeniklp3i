@@ -17,6 +17,8 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class PendaftaranActivity extends AppCompatActivity {
 
+    private Button moveContact;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +28,13 @@ public class PendaftaranActivity extends AppCompatActivity {
         // Tombol untuk kembali ke halaman sebelumnya
         Button backButton = findViewById(R.id.move_back);
         backButton.setOnClickListener(v -> finish());
+
+        // Tombol untuk pindah ke ApaItuHumasActivity
+        moveContact = findViewById(R.id.move_contact);
+        moveContact.setOnClickListener(view -> {
+            Intent intent = new Intent(PendaftaranActivity.this, HubungiKamiActivity.class);
+            startActivity(intent);
+        });
 
         Button openWebsiteButton = findViewById(R.id.buttonRegister);
         openWebsiteButton.setOnClickListener(v -> {

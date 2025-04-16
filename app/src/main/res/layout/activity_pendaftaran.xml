@@ -264,10 +264,11 @@
                     android:layout_marginBottom="15dp" />
 
                 <Button
-                    android:id="@+id/buttonContact"
+                    android:id="@+id/move_contact"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Hubungi Kami"
+                    android:textColor="@color/black"
                     android:background="@drawable/button_outline"
                     />
 
