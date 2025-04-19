@@ -50,13 +50,13 @@ public class JurusanFragment extends Fragment {
         ImageButton humas = view.findViewById(R.id.move_humas);
         ImageButton akuntansi = view.findViewById(R.id.move_akuntansi);
 
-        Animation anim = AnimationUtils.loadAnimation(getContext(), R.anim.slide_in_left);
+        ImageButton[] buttons = {adbis, mi, bisdig, humas, akuntansi};
 
-        adbis.startAnimation(anim);
-        mi.startAnimation(anim);
-        bisdig.startAnimation(anim);
-        humas.startAnimation(anim);
-        akuntansi.startAnimation(anim);
+        for (int i = 0; i < buttons.length; i++) {
+            Animation anim = AnimationUtils.loadAnimation(getContext(), R.anim.slide_in_left);
+            anim.setStartOffset(i * 100); // Delay bertahap 100ms per tombol
+            buttons[i].startAnimation(anim);
+        }
         return view;
     }
 }
