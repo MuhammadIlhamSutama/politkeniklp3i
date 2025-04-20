@@ -6,24 +6,21 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.Toast;
 
 import android.content.Intent;
-import android.view.WindowManager;
 import android.widget.ImageButton;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class JurusanFragment extends Fragment {
 
     private ImageButton move_humas;
+    private ImageButton move_mi;
 
 
     private RecyclerView recyclerView;
@@ -44,6 +41,17 @@ public class JurusanFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
+        move_mi=view.findViewById(R.id.move_mi);
+        move_mi.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view1){
+                Intent intent=new Intent(getActivity(), WibiMainInformatikaActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
         ImageButton adbis = view.findViewById(R.id.move_adbis);
         ImageButton mi = view.findViewById(R.id.move_mi);
         ImageButton bisdig = view.findViewById(R.id.bisdig);

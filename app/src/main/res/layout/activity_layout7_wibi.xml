@@ -5,14 +5,14 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WibiMain"
+    tools:context=".Layout7"
     android:background="@drawable/page_cpl">
 
 
     <TextView
         android:layout_width="260dp"
         android:layout_height="35dp"
-        android:text="@string/pencapaian_pembelajaran"
+        android:text="pencapaian_pembelajaran"
         android:textSize="22sp"
         android:textStyle="bold"
         android:layout_marginTop="380dp"

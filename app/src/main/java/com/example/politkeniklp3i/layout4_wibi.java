@@ -1,4 +1,4 @@
-package com.example.uts;
+package com.example.politkeniklp3i;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,13 +10,13 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class layout4 extends AppCompatActivity {
+public class layout4_wibi extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_layout4);
+        setContentView(R.layout.activity_layout4_wibi);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -24,7 +24,7 @@ public class layout4 extends AppCompatActivity {
         });
     }
     public void pindah7(View view) {
-        Intent intent = new Intent(layout4.this,Layout2.class);
+        Intent intent = new Intent(com.example.politkeniklp3i.layout4_wibi.this,Layout2_wibi.class);
         startActivity(intent);
     }
 }

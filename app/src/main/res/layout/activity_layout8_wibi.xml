@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    tools:context=".WibiMain">
+    tools:context=".layout8">
 
 
     <LinearLayout
@@ -36,7 +36,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/n_1_bertaqwa_kepada_tuhan_yang_maha_esa_dan_mampu_n_menunjukkan_sikap_religius_n_n_2_menjunjung_tinggi_nilai_kemanusiaan_dalam_menjalankan_n_tugas_berdasarkan_agama_moral_dan_etika_n_n_3_berkontribusi_dalam_peningkatan_mutu_kehidupan_n_bermasyarakat_berbangsa_bernegara_dan_peradaban_n_berdasarkan_pancasila_n_n_4_berperan_sebagai_warga_negara_yang_bangga_dan_cinta_n_tanah_air_memiliki_nasionalisme_serta_rasa_tanggung_n_jawab_pada_negara_dan_bangsa_n_n_n_5_mengembangkan_infrastruktur_n_yang_memadai_untuk_mendukung_proses_n_pembelajaran_n_n_6_menjalin_kemitraan_dan_kerjasama_dengan_n_dunia_usaha_dan_industri_untuk_kepentingan_n_program_magang_dan_kerja_serta_pengembangan_n_kurikulum_n_n_7_meningkatkan_kualitas_sistem_penjamin_mutu_untuk_n_tercapaianya_visi_dengan_baik"
+            android:text="n_1_bertaqwa_kepada_tuhan_yang_maha_esa_dan_mampu_n_menunjukkan_sikap_religius_n_n_2_menjunjung_tinggi_nilai_kemanusiaan_dalam_menjalankan_n_tugas_berdasarkan_agama_moral_dan_etika_n_n_3_berkontribusi_dalam_peningkatan_mutu_kehidupan_n_bermasyarakat_berbangsa_bernegara_dan_peradaban_n_berdasarkan_pancasila_n_n_4_berperan_sebagai_warga_negara_yang_bangga_dan_cinta_n_tanah_air_memiliki_nasionalisme_serta_rasa_tanggung_n_jawab_pada_negara_dan_bangsa_n_n_n_5_mengembangkan_infrastruktur_n_yang_memadai_untuk_mendukung_proses_n_pembelajaran_n_n_6_menjalin_kemitraan_dan_kerjasama_dengan_n_dunia_usaha_dan_industri_untuk_kepentingan_n_program_magang_dan_kerja_serta_pengembangan_n_kurikulum_n_n_7_meningkatkan_kualitas_sistem_penjamin_mutu_untuk_n_tercapaianya_visi_dengan_baik"
             android:textSize="14sp"
             android:textColor="@color/black"
             android:background="@color/abumuda"

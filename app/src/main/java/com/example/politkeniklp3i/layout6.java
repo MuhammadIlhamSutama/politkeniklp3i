@@ -1,4 +1,4 @@
-package com.example.uts;
+package com.example.politkeniklp3i;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -18,7 +18,7 @@ public class layout6 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_layout6);
+        setContentView(R.layout.activity_layout6_wibi);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -27,7 +27,7 @@ public class layout6 extends AppCompatActivity {
     }
 
     public void pindah14(View view) {
-        Intent intent = new Intent(layout6.this, WibiMain.class);
+        Intent intent = new Intent(layout6.this, WibiMainInformatikaActivity.class);
         startActivity(intent);
     }
 

@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    tools:context=".WibiMain">
+    tools:context=".layout11">
 
 
     <LinearLayout
@@ -23,7 +23,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/point"
+            android:text="point"
             android:textStyle="bold"
             android:layout_marginTop="10dp"
             android:layout_marginStart="170dp"
@@ -36,7 +36,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/keterampilan_khusus"
+            android:text="keterampilan_khusus"
             android:textSize="14sp"
             android:textColor="@color/black"
             android:background="@color/abumuda"
