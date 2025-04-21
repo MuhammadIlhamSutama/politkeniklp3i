@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".layout9">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/background_6"
+            android:adjustViewBounds="true" />
+
+        <!-- MISI -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="POINT"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="170dp"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:background="#333333"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="n_1_menyelenggarakan_pendidikan_vokasi_n_manajemen_informatika_bidang_n_programming_dan_multimedia_yang_n_berkualitas_sesuai_dengan_kebutuhan_n_dunia_industri_n_n_2_menyelenggarakan_penelitian_dan_publikasi_n_jurnal_ilmiah_di_bidang_teknologi_informasi_n_dan_komunikasi_yang_bermanfaat_bagi_n_pengembangan_ilmu_pengetahuan_dan_n_teknologi_n_n_3_melaksanakan_kegiatan_pengabdian_n_kepada_masyarakat_yang_dapat_n_meningkatkan_kesejahteraan_masyarakat_n_n_4_meningkatkan_kompetensi_tenaga_pendidik_n_dan_tenaga_kependidikan_untuk_n_memberikan_kualitas_pelayanan_yang_n_terbaik_n_n_5_mengembangkan_infrastruktur_n_yang_memadai_untuk_mendukung_proses_n_pembelajaran_n_n_6_menjalin_kemitraan_dan_kerjasama_dengan_n_dunia_usaha_dan_industri_untuk_kepentingan_n_program_magang_dan_kerja_serta_pengembangan_n_kurikulum_n_n_7_meningkatkan_kualitas_sistem_penjamin_mutu_untuk_n_tercapaianya_visi_dengan_baik"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:background="@color/abumuda"
+            android:padding="12dp"
+            />
+
+        <Button
+            android:id="@+id/pindah1"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:backgroundTint="@color/abu"
+            android:text="Back to Menu"
+            android:onClick="pindah31"/>
+
+
+    </LinearLayout>
+</ScrollView>

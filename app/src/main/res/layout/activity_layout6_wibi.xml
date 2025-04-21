@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".layout6">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Konten VISI & MISI -->
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/background3"
+                android:adjustViewBounds="true" />
+
+
+            <!-- VISI -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VISI"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="175dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:background="#333333"
+                android:padding="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\n   Pada tahun 2031 menjadi Program Studi \n   yang terkemuka di Tingkat Asia dalam bidang \n   informatika kompeten dan berkarakter"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:background="@color/abumuda"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- MISI -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MISI"
+                android:textStyle="bold"
+                android:layout_marginStart="175dp"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:background="#333333"
+                android:padding="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\n    1. Menyelenggarakan pendidikan vokasi \n         manajemen informatika bidang \n         programming dan multimedia yang \n         berkualitas sesuai dengan kebutuhan \n         dunia industri. \n\n     2. Menyelenggarakan penelitian dan publikasi \n          jurnal ilmiah di bidang teknologi informasi \n          dan komunikasi yang bermanfaat bagi \n          pengembangan ilmu pengetahuan dan \n          teknologi. \n\n     3. Melaksanakan kegiatan pengabdian \n          kepada masyarakat yang dapat \n          meningkatkan kesejahteraan masyarakat.\n\n     4. Meningkatkan kompetensi tenaga pendidik \n          dan tenaga kependidikan untuk \n          memberikan kualitas pelayanan yang \n          terbaik. \n\n     5. Mengembangkan infrastruktur \n          yang memadai untuk mendukung proses \n          pembelajaran. \n\n     6. Menjalin kemitraan dan kerjasama dengan \n          dunia usaha dan industri untuk kepentingan \n          program magang dan kerja serta pengembangan \n          kurikulum. \n\n     7. Meningkatkan kualitas sistem penjamin mutu untuk \n          tercapaianya visi dengan baik."
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:background="@color/abumuda"
+                android:padding="12dp"
+               />
+
+        <Button
+            android:id="@+id/pindah1"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Back to Menu"
+            android:onClick="pindah14"/>
+
+
+        </LinearLayout>
+</ScrollView>

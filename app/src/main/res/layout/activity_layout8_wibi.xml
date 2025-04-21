@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".layout8">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/background_5"
+            android:adjustViewBounds="true" />
+
+        <!-- MISI -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="POINT"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="170dp"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:background="#333333"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="n_1_bertaqwa_kepada_tuhan_yang_maha_esa_dan_mampu_n_menunjukkan_sikap_religius_n_n_2_menjunjung_tinggi_nilai_kemanusiaan_dalam_menjalankan_n_tugas_berdasarkan_agama_moral_dan_etika_n_n_3_berkontribusi_dalam_peningkatan_mutu_kehidupan_n_bermasyarakat_berbangsa_bernegara_dan_peradaban_n_berdasarkan_pancasila_n_n_4_berperan_sebagai_warga_negara_yang_bangga_dan_cinta_n_tanah_air_memiliki_nasionalisme_serta_rasa_tanggung_n_jawab_pada_negara_dan_bangsa_n_n_n_5_mengembangkan_infrastruktur_n_yang_memadai_untuk_mendukung_proses_n_pembelajaran_n_n_6_menjalin_kemitraan_dan_kerjasama_dengan_n_dunia_usaha_dan_industri_untuk_kepentingan_n_program_magang_dan_kerja_serta_pengembangan_n_kurikulum_n_n_7_meningkatkan_kualitas_sistem_penjamin_mutu_untuk_n_tercapaianya_visi_dengan_baik"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:background="@color/abumuda"
+            android:padding="12dp"
+            />
+
+        <Button
+            android:id="@+id/pindah1"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:backgroundTint="@color/abu"
+            android:text="Back to Menu"
+            android:onClick="pindah26"/>
+
+
+    </LinearLayout>
+</ScrollView>
