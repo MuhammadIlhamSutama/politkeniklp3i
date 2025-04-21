@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AkuntansiCplFragment"
+        android:background="@color/light_blue_A600">
+
+        <!-- Header Image -->
+        <ImageView
+            android:id="@+id/thirtyfiveyears1"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/akuntansi" />
+
+        <!-- Kontainer untuk Visi dan Misi -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="150dp"
+            android:padding="16dp"
+            android:background="@drawable/background_rounded">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Ikon Header -->
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_kompetensi"
+                    android:contentDescription="Visi Icon"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Teks Visi -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Program Studi Akuntansi memiliki Capaian Pembelajaran Lulusan (CPL) sebagai berikut:"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="#2C387E"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A. Aspek Sikap"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:lineSpacingExtra="4dp"
+                    android:textColor="#616161"
+                    android:layout_marginBottom="16dp" />
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_attitude"
+                    android:contentDescription="Misi Icon"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Bertaqwa kepada Tuhan Yang Maha Esa dan mampu menunjukkan sikap religius.\n
+• Menjunjung tinggi nilai kemanusiaan dalam menjalankan tugas berdasarkan agama, moral, dan etika.\n
+• Memiliki kepribadian dan jati diri bangsa.\n
+• Berkontribusi dalam peningkatan mutu kehidupan, bermasyarakat, berbangsa, bernegara, dan peradaban berdasarkan Pancasila.\n
+• Berperan sebagai warga negara yang bangga dan cinta tanah air, memiliki nasionalisme serta rasa tanggung jawab pada negara dan bangsa.\n
+• Menghargai keberagaman budaya, pandangan, agama, dan kepercayaan, serta pendapat atau temuan orisinal orang lain.\n
+• Bekerjasama dan memiliki kepekaan sosial serta kepedulian terhadap masyarakat dan lingkungan.\n
+• Taat hukum dan disiplin dalam kehidupan bermasyarakat dan bernegara.\n
+• Menginternalisasi nilai, norma, dan etika akademik.\n
+• Menunjukkan sikap bertanggung jawab atas pekerjaan di bidang keahliannya secara mandiri.\n
+• Menginternalisasi semangat kemandirian, kejuangan, dan kewirausahaan.\n
+• Mampu menerapkan prinsip-prinsip etika bisnis dan profesi akuntan.\n"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp"
+                    android:textColor="#616161"
+                    android:padding="16dp"
+                    android:layout_marginBottom="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="B. Aspek Keterampilan Umum (D3/Level 5)"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:lineSpacingExtra="4dp"
+                    android:textColor="#616161"
+                    android:layout_marginBottom="16dp" />
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_keahlian_umum"
+                    android:contentDescription="Misi Icon"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Mampu berkomunikasi dalam Bahasa Indonesia secara lisan dan tulisan dengan baik dan benar.\n
+• Mampu menyelesaikan pekerjaan berlingkup luas dan menganalisis data dengan beragam metode yang sesuai, baik yang belum maupun yang sudah baku.\n
+• Mampu menunjukkan kinerja bermutu dan terukur dari hasil kerja yang seluruhnya merupakan hasil kerja sendiri, tanpa pengawasan.\n
+• Mampu memecahkan masalah pekerjaan dengan sifat dan konteks yang sesuai dengan bidang keahlian terapannya didasarkan pada pemikiran logis, inovatif, dan bertanggungjawab atas hasilnya secara mandiri.\n
+• Mampu menyusun laporan hasil dan proses kerja secara akurat dan sahih serta mengkomunikasikannya secara efektif kepada pihak lain yang membutuhkan.\n
+• Mampu bekerjasama, berkomunikasi, dan berinovatif dalam pekerjaan.\n
+• Mampu bertanggungjawab atas pencapaian hasil kerja kelompok dan melakukan supervisi dan evaluasi terhadap penyelesaian pekerjaan yang ditugaskan kepada pekerja yang berada di bawah tanggungjawabnya.\n
+• Mampu melakukan proses evaluasi diri terhadap kelompok kerja yang berada di bawah tanggungjawabnya, dan mengelola pengembangan kompetensi kerja secara mandiri.\n
+• Mampu mengelola data dan informasi terkait dengan pelaksanaan tugas dan tanggungjawabnya.\n"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp"
+                    android:textColor="#616161"
+                    android:padding="16dp"
+                    android:layout_marginBottom="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="C. Aspek Pengetahuan Umum (D3/Level 5)"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:lineSpacingExtra="4dp"
+                    android:textColor="#616161"
+                    android:layout_marginBottom="16dp" />
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_pengetahuan_umum"
+                    android:contentDescription="Misi Icon"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Menguasai pengetahuan tentang nilai-nilai dari agama yang diyakini.\n
+• Memiliki pengetahuan tentang prinsip pengelolaan sumberdaya yang terkait dengan jenis keahliannya.\n
+• Menguasai konsep umum tentang dasar negara Indonesia, prinsip hidup bermasyarakat, berbangsa dan bernegara, hak dan kewajiban warga negara menurut Pancasila.\n
+• Menguasai kaidah bahasa Indonesia untuk penyusunan laporan.\n
+• Menguasai prinsip pengelolaan yang terkait bidang keahlian.\n"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp"
+                    android:textColor="#616161"
+                    android:padding="16dp"
+                    android:layout_marginBottom="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="D. Aspek Pengetahuan Khusus D3 Akuntansi"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:lineSpacingExtra="4dp"
+                    android:textColor="#616161"
+                    android:layout_marginBottom="16dp" />
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_pengetahuan_khusus"
+                    android:contentDescription="Misi Icon"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Menguasai pengetahuan faktual latar belakang perkembangan akuntansi.\n
+• Menguasai prinsip dasar jenis entitas tunggal dan entitas yang memiliki 1 anak perusahaan.\n
+• Menguasai konsep dan prinsip kerangka dasar penyajian dan pengungkapan laporan keuangan.\n
+• Menguasai prinsip dasar pelaporan keuangan entitas tunggal dan entitas dengan satu anak perusahaan.\n
+• Menguasai konsep teoritis siklus akuntansi dalam pelaporan keuangan.\n
+• Menguasai konsep dan prinsip pengakuan, pengukuran, penyajian dan pengungkapan elemen laporan keuangan berdasarkan standar akuntansi keuangan.\n
+• Menguasai pengetahuan konseptual elemen laporan keuangan berdasarkan standar akuntansi keuangan.\n
+• Menguasai pengetahuan konseptual dan prosedural analisis laporan keuangan.\n
+• Menguasai konsep dan teknik akuntansi biaya tradisional, meliputi job order costing system dan process costing system.\n
+• Menguasai pengetahuan konseptual akuntansi biaya alternatif, meliputi activity based costing dan target costing.\n
+• Menguasai pengetahuan konseptual biaya standar, biaya relevan dan harga transfer.\n
+• Menguasai pengetahuan konseptual dan teknik penganggaran entitas jasa, dagang, dan manufaktur.\n
+• Menguasai pengetahuan konseptual dan prosedural peraturan perpajakan yang relevan untuk wajib pajak pribadi dan badan non multinasional.\n
+• Menguasai pengetahuan konseptual dan prosedural audit laporan keuangan.\n
+• Menguasai pengetahuan konseptual dan prosedural sistem informasi akuntansi.\n
+• Menguasai pengetahuan konseptual pengendalian internal.\n
+• Menguasai pengetahuan prosedural aplikasi komputer dan perangkat lunak akuntansi.\n
+• Menguasai pengetahuan konseptual dan prosedural manajemen keuangan meliputi jenis keputusan keuangan, konsep nilai waktu uang, penganggaran modal dan biaya modal.\n
+• Menguasai pengetahuan faktual lingkungan bisnis, ekonomi, manajemen, dan hukum komersial.\n"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp"
+                    android:textColor="#616161"
+                    android:padding="16dp"
+                    android:layout_marginBottom="16dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="E. Aspek Keterampilan Khusus D3 Akuntansi"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:lineSpacingExtra="4dp"
+                    android:textColor="#616161"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Ikon Header -->
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_keterampilan_khusus"
+                    android:contentDescription="Misi Icon"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Mampu secara mandiri mengidentifikasi transaksi dan melakukan pencatatan akuntansi atas transaksi entitas tunggal (yaitu perusahaan perseorangan, CV, Firma, yayasan, dan koperasi) dan entitas yang memiliki 1 (satu) anak perusahaan berdasarkan dokumen yang relevan.\n
+• Mampu secara mandiri membuat buku besar, menyusun neraca percobaan, membuat jurnal penyesuaian, dan mengidentifikasi kesalahan pencatatan dan melakukan jurnal koreksi atas kesalahan tersebut, melakukan rekonsiliasi bank, dan penundaan pengakuan suatu entitas tunggal (yaitu perusahaan perseorangan, CV, firma, yayasan, dan koperasi) dan entitas yang memiliki 1 (satu) anak perusahaan.\n
+• Mampu di bawah supervisi, menyusun laporan keuangan yang terdiri atas (a) laporan laba rugi dan laporan laba komprehensif; (b) laporan perubahan ekuitas; (c) laporan posisi keuangan; (d) laporan arus kas; (e) catatan atas laporan keuangan sesuai dengan standar akuntansi yang berlaku untuk entitas tunggal (yaitu perusahaan perseorangan, CV, Firma, Yayasan, dan koperasi) dan entitas yang memiliki 1 (satu) anak perusahaan dengan memanfaatkan teknologi informasi atau manual.\n
+• Mampu mengevaluasi kesesuaian penyajian akun-akun dalam laporan keuangan yang menjadi tanggung jawabnya sesuai dengan standar yang telah ditentukan.\n
+• Mampu menghitung rasio keuangan yang terdiri atas rasio profitabilitas, rasio likuiditas, rasio solvabilitas, dan rasio aktivitas.\n
+• Mampu secara mandiri menghitung harga pokok dengan metode akuntansi biaya tradisional, meliputi system job order costing maupun process costing berdasarkan data yang tersedia sebagai dasar dalam penyusunan laporan harga pokok produksi.\n
+• Mampu di bawah supervisi menghitung titik impas dalam rangka perencanaan.\n
+• Mampu di bawah supervisi menghitung varians dalam rangka mendukung pengendalian.\n
+• Mampu di bawah supervisi menyusun anggaran operasional dan anggaran keuangan.\n
+• Mampu secara mandiri mengidentifikasi, menghitung dan melaporkan Surat Pemberitahuan (SPT) sehubungan dengan kewajiban perpajakan.\n
+• Mampu membuat bukti potong atas PPh pasal 21, 22, 23, 26, dan PPh final serta bukti pungut PPh Pasal 22 dan PPN sesuai dengan peraturan dan perundangan yang berlaku di Indonesia.\n
+• Mampu mengisi Surat Setoran Pajak (SSP) atas Pajak Penghasilan (PPh), Pajak Pertambahan Nilai (PPN) dan Pajak Penjualan Barang Mewah (PPnBM) sesuai dengan peraturan perundangan yang berlaku di Indonesia.\n
+• Mampu di bawah supervisi melaksanakan prosedur audit.\n
+• Mampu mengidentifikasi, mendokumentasikan dan memanfaatkan sistem informasi akuntansi.\n
+• Mampu mengoperasikan dan memanfaatkan piranti lunak (aplikasi pengolah angka, aplikasi pengolah data, aplikasi presentasi dan aplikasi akuntansi) dalam rangka penyusunan laporan keuangan, anggaran, administrasi perpajakan dan pengauditan.\n
+• Mampu menerapkan teknik manajemen keuangan dalam perhitungan nilai waktu uang dan penganggaran modal dengan data yang tersedia.\n"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp"
+                    android:textColor="#616161"
+                    android:padding="16dp"
+                    android:layout_marginBottom="16dp" />
+
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

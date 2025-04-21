@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AkuntansiProfilLulusanFragment"
+        android:background="@color/light_blue_A600">
+
+        <!-- Header Image -->
+        <ImageView
+            android:id="@+id/thirtyfiveyears1"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/akuntansi" />
+
+        <!-- Kontainer untuk Visi dan Misi -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="150dp"
+            android:padding="16dp"
+            android:background="@drawable/background_rounded">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Ikon Header -->
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_graduation"
+                    android:contentDescription="Visi Icon"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Teks Visi -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Profil Lulusan D3 Program Studi Akuntansi dengan gelar A.Md.Ak sebagai berikut"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="#2C387E"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="“Menjadi teknisi akuntansi yang menguasai pengetahuan dan keterampilan di bidang akuntansi untuk suatu entitas dengan didukung kemampuan bekerjasama dan berkomunikasi secara efektif, dan bertanggungjawab terhadap pencapaian hasil kerja mandiri maupun kelompok kerja di bawah supervisi akuntan.”"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp"
+                    android:textColor="#616161"
+                    android:layout_marginBottom="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1.Tenaga Operator Komputer  ke LSP Telematika \n2.TOEIC ke International Test Center \n3.Skema Prodi : Teknisi Akuntansi Madya ke LSP LP3I \n 4.Skema Peminatan  : \n– Brevet Pajak A dan B dari IKPI \n– Perangkat Lunak Akuntansi ke Accurate"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp"
+                    android:textColor="#616161"
+                    android:padding="16dp"
+                    android:layout_marginBottom="16dp" />
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

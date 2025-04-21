@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AkuntansiPeminatanFragment"
+        android:background="@color/light_blue_A600">
+
+        <ImageView
+            android:id="@+id/thirtyfiveyears"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/akuntansi" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140dp"
+            android:background="@drawable/background_white_bottom"
+            app:layout_constraintTop_toBottomOf="@id/thirtyfiveyears"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginBottom="48dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/text_view_sederhana"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pilihan Peminatan / Konsentrasi."
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:padding="8dp"
+                    android:gravity="center" />
+
+                <Button
+                    android:id="@+id/button_akuntansi_keuangan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_shape"
+                    android:text="Akuntansi Keuangan" />
+
+                <!-- Frame untuk Akuntansi Keuangan -->
+                <FrameLayout
+                    android:id="@+id/frame_akuntansi_keuangan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:background="#E0E0E0"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Prospek Karir: \n• Tax Officer \n• Junior Tax Auditor \n• Tax Advisor/Planner \n• Junior Tax Consultant"
+                        android:textSize="18sp"
+                        android:textColor="#FF6200EE"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:background="@drawable/background_text"
+                        android:lineSpacingExtra="6dp"/>
+<!--                        android:fontFamily="@font/"/>-->
+
+                </FrameLayout>
+
+                <!-- Frame untuk Akuntansi Perpajakan -->
+                <Button
+                    android:id="@+id/button_akuntansi_perpajakan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_shape"
+                    android:layout_marginTop="10dp"
+                    android:text="Akuntansi Perpajakan" />
+
+                <FrameLayout
+                    android:id="@+id/frame_akuntansi_perpajakan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:background="#E0E0E0"
+                    android:visibility="gone">
+
+                    <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Prospek Karir: \n• Tax Officer \n• Junior Tax Auditor \n• Tax Advisor/Planner \n• Junior Tax Consultant"
+                    android:textSize="18sp"
+                    android:textColor="#FF6200EE"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:background="@drawable/background_text"
+                    android:lineSpacingExtra="6dp"/>
+                </FrameLayout>
+
+                <!-- Frame untuk Akuntansi Digital -->
+                <Button
+                    android:id="@+id/button_akuntansi_digital"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_shape"
+                    android:text="Akuntansi Digital" />
+
+                <FrameLayout
+                    android:id="@+id/frame_akuntansi_digital"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:background="#E0E0E0"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Prospek Karir: \n• Tax Officer \n• Junior Tax Auditor \n• Tax Advisor/Planner \n• Junior Tax Consultant"
+                        android:textSize="18sp"
+                        android:textColor="#FF6200EE"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:background="@drawable/background_text"
+                        android:lineSpacingExtra="6dp"/>
+                </FrameLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
