@@ -1,4 +1,4 @@
-package com.example.mylp3i;
+package com.example.politkeniklp3i;
 
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -14,14 +14,6 @@ import androidx.fragment.app.Fragment;
 
 public class AkuntansiFragment extends Fragment {
 
-    @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-        // Hilangkan bottom navigation bar
-        requireActivity().findViewById(R.id.bottom_navigation).setVisibility(View.GONE);
-    }
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -35,7 +27,7 @@ public class AkuntansiFragment extends Fragment {
                 AkuntansiPeminatanFragment akuntansiFragment = new AkuntansiPeminatanFragment();
                 FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.container, akuntansiFragment);
+                fragmentTransaction.replace(R.id.fragment_container, akuntansiFragment);
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
             }
@@ -49,7 +41,7 @@ public class AkuntansiFragment extends Fragment {
                 AkuntansiVisiMisiFragment akuntansiFragment = new AkuntansiVisiMisiFragment();
                 FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.container, akuntansiFragment);
+                fragmentTransaction.replace(R.id.fragment_container, akuntansiFragment);
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
             }
@@ -63,7 +55,7 @@ public class AkuntansiFragment extends Fragment {
                 AkuntansiProfilLulusanFragment akuntansiFragment = new AkuntansiProfilLulusanFragment();
                 FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.container, akuntansiFragment);
+                fragmentTransaction.replace(R.id.fragment_container, akuntansiFragment);
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();            }
         });
@@ -76,7 +68,7 @@ public class AkuntansiFragment extends Fragment {
                 AkuntansiKompetensiFragment akuntansiFragment = new AkuntansiKompetensiFragment();
                 FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.container, akuntansiFragment);
+                fragmentTransaction.replace(R.id.fragment_container, akuntansiFragment);
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();               }
         });
@@ -89,7 +81,7 @@ public class AkuntansiFragment extends Fragment {
                 AkuntansiCplFragment akuntansiFragment = new AkuntansiCplFragment();
                 FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.container, akuntansiFragment);
+                fragmentTransaction.replace(R.id.fragment_container, akuntansiFragment);
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();            }
         });
@@ -102,7 +94,7 @@ public class AkuntansiFragment extends Fragment {
                 AkuntansiLokasiFragment akuntansiFragment = new AkuntansiLokasiFragment();
                 FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.container, akuntansiFragment);
+                fragmentTransaction.replace(R.id.fragment_container, akuntansiFragment);
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();            }
         });
@@ -110,11 +102,4 @@ public class AkuntansiFragment extends Fragment {
         return view;
     }
 
-    @Override
-    public void onDestroy() {
-        super.onDestroy();
-
-        // Tampilkan kembali bottom navigation bar saat keluar dari fragment ini
-        requireActivity().findViewById(R.id.bottom_navigation).setVisibility(View.VISIBLE);
-    }
 }

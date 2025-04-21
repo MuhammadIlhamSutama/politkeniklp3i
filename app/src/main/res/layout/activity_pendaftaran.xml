@@ -78,7 +78,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginTop="29dp"
+                android:layout_marginTop="18dp"
                 android:padding="16dp">
 
                 <!-- CardView 1 -->
@@ -173,14 +173,14 @@
                                 android:layout_height="wrap_content"
                                 android:text="Pendaftaran gel 2 TA 2025/2026"
                                 android:textColor="@color/grey"
-                                android:textSize="10sp" />
+                                android:textSize="12sp" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Semua Kampus dan Cabang"
                                 android:textColor="@color/grey"
-                                android:textSize="10sp" />
+                                android:textSize="12sp" />
                         </LinearLayout>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>

@@ -22,6 +22,8 @@ public class JurusanFragment extends Fragment {
     private ImageButton move_humas;
     private ImageButton move_mi;
 
+    private ImageButton move_akuntansi;
+
 
     private RecyclerView recyclerView;
     private JurusanAdapter adapter;
@@ -47,6 +49,15 @@ public class JurusanFragment extends Fragment {
             @Override
             public void onClick(View view1){
                 Intent intent=new Intent(getActivity(), WibiMainInformatikaActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        move_akuntansi=view.findViewById(R.id.move_akuntansi);
+        move_akuntansi.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view1){
+                Intent intent=new Intent(getActivity(), RanggaMainAkuntasiActivity.class);
                 startActivity(intent);
             }
         });

@@ -1,4 +1,4 @@
-package com.example.mylp3i;
+package com.example.politkeniklp3i;
 
 import android.os.Bundle;
 
